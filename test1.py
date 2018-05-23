@@ -5,8 +5,8 @@ if __name__ == '__main__':
         # 构建所有的节点，Redis会使⽤CRC16算法，将键和值写到某个节点上
         startup_nodes = [
             {'host': '192.168.47.141', 'port': '7000'},
-            {'host': '192.168.47.141', 'port': '7002'},
             {'host': '192.168.47.141', 'port': '7001'},
+            {'host': '192.168.47.141', 'port': '7002'},
         ]
         # 构建StrictRedisCluster对象
         src = StrictRedisCluster(startup_nodes=startup_nodes, decode_responses=True)
@@ -18,3 +18,5 @@ if __name__ == '__main__':
         print(name)
     except Exception as e:
         print(e)
+
+
