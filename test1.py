@@ -10,8 +10,8 @@ if __name__ == '__main__':
         ]
         # 构建StrictRedisCluster对象
         src = StrictRedisCluster(startup_nodes=startup_nodes, decode_responses=True)
-        # 设置键为name、值为itheima的数据
-        result = src.set('name', 'itheima')
+        # 设置键为name、值为 itheima 的数据
+        result = src.set('name', 'itcast')
         print(result)
         # 获取键为name
         name = src.get('name')
