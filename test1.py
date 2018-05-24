@@ -1,5 +1,5 @@
 from rediscluster import StrictRedisCluster
-
+# ｇｉｔｉｇｎｏｒｅ　　忽略文件
 if __name__ == '__main__':
     try:
         # 构建所有的节点，Redis会使⽤CRC16算法，将键和值写到某个节点上
